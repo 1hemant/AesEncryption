@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AES Encryption</title>
+</head>
+<body>
+    <h1>CryptoJs AES Encryption/Decryption</h1>
+    <div id="encrypted"></div>
+    <div id="decrypted"></div>
+
+    <div id="encrypted1">
+        <input type="text" name="normalText" id="normalText" placeholder="Enter text to encrypt">
+        <input type="password" name="password" id="pwdEn" placeholder="Enter password">
+        <input type="button" value="Encrypt" id="encryptBtn">
+        <div id="encryptedText"></div>
+    </div>
+    <br>
+    
+    <br>
+    <div id="decrypted1">
+        <input type="text" name="normalText" id="encryptedInput" placeholder="Enter text to decrypt">
+        <input type="password" name="password" id="pwdDe" placeholder="Enter password">
+        <input type="button" value="Decrypt" id="decryptBtn">
+        <div id="decryptedText"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
+    <script src="AesEncryption.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
